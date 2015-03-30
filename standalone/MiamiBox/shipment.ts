@@ -1,0 +1,11 @@
+"strict mode"
+/// <reference path="./miamiboxapp.ts">
+
+module MiamiBox {
+	export class Shipment {
+		constructor (private trackingCode: string, private contents?: Contents) {}
+		populateContents (items: string[]): void {
+			this.contents = new Contents(items);
+		}
+	}
+}
