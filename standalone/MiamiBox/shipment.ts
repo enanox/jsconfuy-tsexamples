@@ -7,5 +7,8 @@ module MiamiBox {
 		populateContents (items: string[]): void {
 			this.contents = new Contents(items);
 		}
+        get shipmentContents(): Contents {
+            return this.contents;
+        }
 	}
 }
