@@ -1,5 +1,6 @@
 "strict mode"
 /// <reference path="./miamiboxapp.ts">
+/// <reference path="./contents.ts">
 
 module MiamiBox {
 	export class Shipment {

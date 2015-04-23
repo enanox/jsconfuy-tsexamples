@@ -1,5 +1,4 @@
 "strict mode";
-
 /// <reference path="./miamiboxapp.ts"/>
 
 module MiamiBox {

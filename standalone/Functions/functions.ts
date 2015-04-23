@@ -36,7 +36,7 @@ console.log("Default parameters partial sum:", partialTotal, "\n\n");
 // Rest parameters
 // ==========================================
 
-function translateTexts(view: HTMLElement, ...literals: string[]) {
+function translateTexts(view: HTMLElement, language: string = "ES", ...literals: string[]) {
     if (view && literals) {
         var translatableElements = view.querySelectorAll("span[data-translate]");    
 
@@ -48,6 +48,21 @@ function translateTexts(view: HTMLElement, ...literals: string[]) {
         }
     }
 }
+
+// Usage: Assuming the following structure
+// <html>
+//   <head></head>
+//   <body>
+//     <header>
+//       <span data-translate="" class="back"></span>
+//       <span data-translate="" class="title"></span>
+//       <span data-translate="" class="contact_us"></span>
+//     </header>
+//   </body>
+// </html>
+
+// var header: HTMLElement = document.getElementById("header");
+// translateTexts(header, "EN", "Back to top", "Title", "Contact us");
 
 // Overloads
 // ==========================================
