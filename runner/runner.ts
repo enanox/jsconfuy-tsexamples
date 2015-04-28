@@ -7,7 +7,7 @@ var verbose = args.indexOf("-v") != -1;
 var target = "--target ES5";
 var tasks = [
     { compile: "", execute: ""},
-    { compile: "tsc ../standalone/MiamiBox/contents.ts ../standalone/MiamiBox/miamiboxapp.ts ../standalone/MiamiBox/shipmean.ts ../standalone/MiamiBox/shipment.ts ../standalone/MiamiBox/view.ts " + target + " --out ../standalone/MiamiBox/app.js", execute: "node ../standalone/MiamiBox/app.js" }, 
+    { compile: "tsc ../standalone/MiamiBox/app.ts " + target, execute: "node ../standalone/MiamiBox/app.js" }, 
     { compile: "tsc ../standalone/Functions/functions.ts " + target, execute: "node ../standalone/Functions/functions.js" },
     { compile: "tsc ../standalone/Generics/generics.ts " + target, execute: "node ../standalone/Generics/generics.js" },
     { compile: "tsc ../standalone/AsyncTask/asyncTask.ts " + target, execute: "node ../standalone/AsyncTask/asyncTask.js" },

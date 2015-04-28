@@ -19,7 +19,7 @@ In order to compile and run the examples, I've put together a runner for NodeJS 
 
 ## Compiling and running each example
 - __"MiamiBox app"__
-	- `$ tsc ../standalone/MiamiBox/contents.ts ../standalone/MiamiBox/miamiboxapp.ts ../standalone/MiamiBox/shipmean.ts ../standalone/MiamiBox/shipment.ts ../standalone/MiamiBox/view.ts --out ../standalone/MiamiBox/app.js --target ES5`
+	- `$ tsc ../standalone/MiamiBox/app.ts --target ES5`
 	- `$ node ../standalone/MiamiBox/app.js`
 - __Functions__
 	- `$ tsc ../standalone/Functions/functions.ts`
