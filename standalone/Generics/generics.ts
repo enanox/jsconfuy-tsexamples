@@ -66,14 +66,14 @@ class Task<T extends ManagedTask> {
     }
 }
 
-var codeDB = new Task<CodingTask>("#1", "Code DB");
-codeDB.task = new CodingTask();
+var codeBL = new Task<CodingTask>("#1", "Code BL");
+codeBL.task = new CodingTask();
 var codeUI = new Task<CodingTask>("#2", "Code UI");
 codeUI.task = new CodingTask("HTML");
 var phoneJoe = new Task<PhoneTask>("#3", "Call Joe");
 phoneJoe.task = new PhoneTask(PhoneNumbers.CellPhone, "Joe");
 
 console.log("Generic classes");
-console.log(codeDB.toString());
+console.log(codeBL.toString());
 console.log(codeUI.toString());
 console.log(phoneJoe.toString());

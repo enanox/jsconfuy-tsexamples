@@ -1,14 +1,14 @@
 "use strict";
 
 /// <reference path="contents.ts" />
-import sContents = require("./contents");
+import { Contents } from "./contents";
 
 export class Shipment {
-	constructor (private trackingCode: string, private contents?: sContents.Contents) {}
+	constructor (private trackingCode: string, private contents?: Contents) {}
 	populateContents (items: string[]): void {
-		this.contents = new sContents.Contents(items);
+		this.contents = new Contents(items);
 	}
-    get shipmentContents(): sContents.Contents {
+    get shipmentContents(): Contents {
         return this.contents;
     }
 }
