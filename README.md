@@ -1,6 +1,6 @@
 # TypeScript examples for JSConfUY 2015
 
-Hi everyone, I hope these examples could have helped you through the vast overview of the TypeScript language.
+Hi everyone, I hope these examples could help you through the vast overview of the TypeScript language.
 
 Just a reminder, to get full info about TypeScript check out [its official site](http://www.typescriptlang.org), and the list of definitions for a lot of [common libraries](http://definitelytyped.org).
 
@@ -10,7 +10,7 @@ In order to compile and run the examples, I've put together a runner for NodeJS 
 - NodeJS
 - Clone this repository
 - Install `typescript` as a global module this way: 
-`$ npm install typescript -g` (this will install the 1.5.0-alpha version)
+`$ npm install typescript -g`
 - `cd` to the root directory, and compile the runner with 
 `$ tsc runner.ts --module CommonJS`
 - Run it with
