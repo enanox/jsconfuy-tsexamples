@@ -54,7 +54,7 @@ function logInfo (mode: string, task?: Object): void {
 var args = process.argv.splice(2);
 var part = parseInt(args[0], 10);
 var verbose = args.indexOf("-v") != -1;
-var tasks: Array<Task> = [
+var tasks: Task[] = [
     new Task(),
     new Task("cd ../standalone/MiamiBox && tsc", "node ../standalone/MiamiBox/app.js"), 
     new Task("tsc ../standalone/Functions/functions.ts", "node ../standalone/Functions/functions.js"),
