@@ -1,4 +1,4 @@
-/// <reference path="./lib/node.d.ts"/>
+/// <reference path="./typings/node/node.d.ts"/>
 
 import { exec } from "child_process";
 

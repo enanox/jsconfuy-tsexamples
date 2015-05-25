@@ -1,0 +1,25 @@
+{
+  "name": "jsconfuy-tsexamples",
+  "version": "0.1.0",
+  "description": "JSConf Uruguay 2015 - TypeScript examples",
+  "main": "runner/runner.ts",
+  "scripts": {
+    "install": "cd runner && tsd reinstall",
+    "test": "cd runner && tsc && node runner -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enanox/jsconfuy-tsexamples.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "JSConf",
+    "JSConfUY"
+  ],
+  "author": "Mathias Rodriguez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enanox/jsconfuy-tsexamples/issues"
+  },
+  "homepage": "https://github.com/enanox/jsconfuy-tsexamples"
+}
