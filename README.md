@@ -1,5 +1,7 @@
 # TypeScript examples for JSConfUY 2015
 
+[![TypeScript definitions on DefinitelyTyped](http://definitelytyped.org/badges/standard.svg)](http://definitelytyped.org) 
+
 Hi everyone, I hope these examples could help you through the vast overview of the TypeScript language.
 
 Just a reminder, to get full info about TypeScript check out [its official site](http://www.typescriptlang.org), and the list of definitions for a lot of [common libraries](http://definitelytyped.org).
