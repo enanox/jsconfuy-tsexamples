@@ -11,26 +11,23 @@ In order to compile and run the examples, I've put together a runner for NodeJS 
 ## Prerequisites
 - NodeJS
 - Clone this repository
-- Install `typescript` as a global module this way: 
-`$ npm install typescript -g`
-- `cd` to the root directory, and compile the runner with 
-`$ tsc runner.ts --module CommonJS`
-- Run it with
-`$ node runner`
-- If you want to run the examples, you could choose among the options listed before.
+- `npm install` it
+- Run the `run` script (if you are on Linux or OS X) or the `dosrun.bat` Batch file.
 
 ## Compiling and running each example
+
+Each one could be loaded using verbose mode (passing `-v` as the last argument).
 - __"MiamiBox app"__
-	- `$ tsc ../standalone/MiamiBox/app.ts --target ES5`
-	- `$ node ../standalone/MiamiBox/app.js`
+	- `$ ./run 1`
+	- `> dosrun.bat 1`
 - __Functions__
-	- `$ tsc ../standalone/Functions/functions.ts`
-	- `$ node ../standalone/Functions/functions.js`
+	- `$ ./run 2`
+	- `> dosrun.bat 2`
 - __Generics__
-	- `$ tsc ../standalone/Generics/generics.ts --target ES5`
-	- `$ node ../standalone/Generics/generics.js`
+	- `$ ./run 3`
+	- `> dosrun.bat 3`
 - __"AsyncTask" example__
-	- `$ tsc ../standalone/AsyncTask/asyncTask.ts`
-	- `$ node ../standalone/AsyncTask/asyncTask.js`
+	- `$ ./run 4`
+	- `> dosrun.bat 4`
 
 License MIT 2015 - Mathias Rodriguez
