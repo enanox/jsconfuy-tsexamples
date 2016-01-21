@@ -5,7 +5,9 @@
   "main": "runner/runner.ts",
   "scripts": {
     "install": "cd runner && tsd reinstall",
-    "test": "cd runner && tsc && node runner -v"
+    "test": "cd runner && tsc && node runner -v",
+    "clean-docs": "rm -rf docs",
+    "gendocs": "npm run clean-docs && typedoc --module commonjs --target ES5 --out docs --experimentalDecorators --ignoreCompilerErrors --name 'JSConfUY 2015 - TypeScript' ./ --exclude 'node_modules/**/*.ts' && open docs/index.html"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/enanox/jsconfuy-tsexamples/issues"
   },
-  "homepage": "https://github.com/enanox/jsconfuy-tsexamples"
+  "homepage": "https://github.com/enanox/jsconfuy-tsexamples",
+  "devDependencies": {
+    "tsd": "^0.6.5",
+    "typedoc": "^0.3.12",
+    "typescript": "^1.8.0-dev.20160120"
+  }
 }
