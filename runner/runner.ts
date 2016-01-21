@@ -58,7 +58,7 @@ var tasks: Task[] = [
     new Task(),
     new Task("cd ../standalone/MiamiBox && tsc", "node ../standalone/MiamiBox/app.js"), 
     new Task("tsc ../standalone/Functions/functions.ts", "node ../standalone/Functions/functions.js"),
-    new Task("cd ../standalone/Generics && tsc", "node ../standalone/Generics/gen.js"),
+    new Task("tsc ../standalone/Generics/generics.ts --target ES5 --module commonjs", "node ../standalone/Generics/generics.js"),
     new Task("tsc ../standalone/AsyncTask/asyncTask.ts", "node ../standalone/AsyncTask/asyncTask.js"),
 ];
 
